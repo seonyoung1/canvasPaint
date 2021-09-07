@@ -13,13 +13,13 @@
 <canvas id="canvas"></canvas>
 <div class="controls">
 	<div class="controls-colors">
-		<button class="black" onclick="paintColor('#000')">검정</button>
-		<button class="red" onclick="paintColor('#ff0000')">빨강</button>
-		<button class="green" onclick="paintColor('#00ff00')">녹색</button>
-		<button class="blue" onclick="paintColor('#000fff')">파랑</button>
+		<button class="black on" onclick="paintColor('#000', this)">검정</button>
+		<button class="red" onclick="paintColor('#ff0000', this)">빨강</button>
+		<button class="green" onclick="paintColor('#00ff00', this)">녹색</button>
+		<button class="blue" onclick="paintColor('#000fff', this)">파랑</button>
 	</div>
 	<div class="controls-button">
-		<input type="button" value="그리기" onclick="use_tool('draw', this);" class="on" />
+		<input type="button" value="그리기" onclick="use_tool('draw', this);" class="on" id="draw" />
 		<input type="button" value="지우개" onclick="use_tool('erase', this);" />
 	</div>
 	<input type="button" class="delete" value="전체삭제" onclick="paintDelete();" />

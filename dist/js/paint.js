@@ -73,8 +73,10 @@ function paintDelete(){
 	ctx.clearRect(0, 0, canvasWidth, canvasHeight);
 }
 
-function paintColor(color){
+function paintColor(color, button){
+	$('#draw').trigger('click');
 	ctx.strokeStyle = color;
+	$(button).addClass('on').siblings().removeClass('on');
 }
 
 //Use draw|erase

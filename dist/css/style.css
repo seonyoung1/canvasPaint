@@ -1,4 +1,4 @@
-/*! Build Date: 2021. 9. 7. 오후 4:12:27 */
+/*! Build Date: 2021. 9. 7. 오후 5:12:14 */
 @import url(https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/stylesheets/NotoSansKR-Hestia.css);
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -194,6 +194,11 @@ body {
   border-radius: 50%;
   font-size: 0;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  border: 2px solid transparent;
+}
+
+.controls-colors button.on {
+  border-color: #000;
 }
 
 .controls-colors .black {
