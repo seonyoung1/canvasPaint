@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, width=device-width, user-scalable=yes">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no" />
+<title>Canvas Draw</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<canvas id="canvas"></canvas>
+<div class="controls">
+	<div class="controls-colors">
+		<button class="black" onclick="paintColor('#000')">검정</button>
+		<button class="red" onclick="paintColor('#ff0000')">빨강</button>
+		<button class="green" onclick="paintColor('#00ff00')">녹색</button>
+		<button class="blue" onclick="paintColor('#000fff')">파랑</button>
+	</div>
+	<div class="controls-button">
+		<input type="button" value="그리기" onclick="use_tool('draw', this);" class="on" />
+		<input type="button" value="지우개" onclick="use_tool('erase', this);" />
+	</div>
+	<input type="button" class="delete" value="전체삭제" onclick="paintDelete();" />
+</div>
+<div id="output"></div>
+
+<script type="text/javascript" src="js/lib/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="js/paint.js"></script>
+<script>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+/*! Build Date: 2021. 9. 7. 오후 4:12:27 */
+@import url(https://cdn.jsdelivr.net/gh/theeluwin/NotoSansKR-Hestia@master/stylesheets/NotoSansKR-Hestia.css);
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  word-break: keep-all;
+  word-wrap: break-word;
+}
+
+a {
+  box-sizing: border-box;
+  color: #000;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  touch-action: pan-y;
+  font-size: 16px;
+}
+
+body {
+  font-family: "Noto Sans Korean", Helvetica, "malgun gothic", "Apple SD Gothic Neo", "Microsoft NeoGothic", "Droid sans", sans-serif;
+  letter-spacing: -0.01em;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+  color: #000;
+  touch-action: pan-y;
+}
+
+h1, h2, h3, h4, h5 {
+  font-size: 1em;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border: 0 none;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select, textarea {
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: 0;
+  font-family: "Noto Sans Korean", Helvetica, "malgun gothic", "Apple SD Gothic Neo", "Microsoft NeoGothic", "Droid sans", sans-serif;
+  font-size: 1em;
+}
+
+input {
+  margin: 0;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+img, fieldset {
+  border: 0;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+li img {
+  vertical-align: top;
+}
+
+button {
+  box-sizing: border-box;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-family: "Noto Sans Korean", Helvetica, "malgun gothic", "Apple SD Gothic Neo", "Microsoft NeoGothic", "Droid sans", sans-serif;
+  font-size: 1em;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  font-size: 0;
+}
+
+body {
+  background-color: #f6f9fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100% - 50px);
+}
+
+#canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.controls {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls input {
+  margin: 0 5px;
+  padding: 3px 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.controls input.on {
+  background-color: #1428A0;
+  color: #fff;
+}
+
+.controls-colors button {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 0;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.controls-colors .black {
+  background-color: #000;
+}
+
+.controls-colors .red {
+  background-color: #ff0000;
+}
+
+.controls-colors .blue {
+  background-color: #000fff;
+}
+
+.controls-colors .green {
+  background-color: #00ff00;
+}
+
+
+/*# sourceMappingURL=style.css.map*/
