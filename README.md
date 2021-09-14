@@ -1,9 +1,9 @@
 # Canvas 그림판
 
-### 마우스, 터치 이벤트 반응
+## 마우스, 터치 이벤트 반응
 [예제사이트](http://seonn.dothome.co.kr/canvas-paint/)
 
-#### 리사이징 후 다시 그려주기 
+#### 1. 리사이징 후 다시 그려주기 
 - [참고사이트](https://ohgyun.com/320)
 - [drawImage()](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage)
 
@@ -16,7 +16,7 @@ ctx.drawImage(image, 0, 0);
 image.src = imageData;
 ````
 
-### 쓰기 & 지우기
+#### 2. 쓰기 & 지우기
 - [도형합성](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/globalCompositeOperation)
 - [한글설명](https://m.blog.naver.com/PostView.naver?isHttpsRedirect=true&blogId=javaking75&logNo=140170321918)
 
@@ -25,4 +25,12 @@ image.src = imageData;
 ctx.globalCompositeOperation = 'source-over';
 // 지우기: 처음 그려진 도형에서 겹치지 않는 부분만 표시됨
 ctx.globalCompositeOperation = 'destination-out';
+````
+
+#### 3. 전체 삭제
+- [참고사이트](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/clearRect)
+- 캔버스의 사이즈를 구해서 전체를 지움
+
+````javascript
+ctx.clearRect(x, y, width, height);
 ````
