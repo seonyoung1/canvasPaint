@@ -85,9 +85,27 @@ function use_tool(tool, button) {
 	$(button).addClass('on').siblings().removeClass('on');
 }
 
+var isResize = false;
+var imageData = '';
+var image = new Image();
+var timer;
+
 $(window).on('resize', function(){
+	if( !isResize ){
+		imageData = canvas.toDataURL();
+		isResize = true;
+	}
 	canvasWidth = window.innerWidth;
 	canvasHeight = window.innerHeight - 50;
 	ctx.canvas.width = canvasWidth;
 	ctx.canvas.height = canvasHeight;
+	ctx.strokeStyle = '#000';
+	ctx.drawImage(image, 0, 0);
+	image.src = imageData;
+	if (timer) {
+		clearTimeout(timer);
+	}
+	timer = setTimeout(function() {
+		isResize = false;
+	}, 200);
 })
